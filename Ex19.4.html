@@ -1,0 +1,90 @@
+<!--Exercise 19.4-->
+<!--Amal Mishael-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 19.4</title>
+<style>
+
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+        
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: space-between;
+    }
+        
+        
+    nav{
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        align-items: flex-start;
+    }
+        
+    nav > a{
+        color: black;
+        font-size: 1.5em;
+        text-decoration: none;
+        margin: 1em;
+        position: relative;
+    }
+        
+    nav > a:before, nav > a:after{
+        content: "";
+        width: 0%;
+        height: 3px;
+        background-color: black;
+        position: absolute;
+        transition: all .5s ease-in-out;
+        opacity: 0;
+    }
+        
+    nav > a:before{
+        top: 0px;
+        transition: all ease-in-out 250ms;
+    }
+        
+    nav > a:after{
+        right: 0px;
+        bottom: 0px;
+        transition: all ease-in-out 250ms;
+        
+    }
+        
+    nav > a:hover:before{
+        width: 100%;
+        opacity: 10;
+    }
+        
+    nav > a:hover:after{
+        width: 100%;
+        opacity: 10;
+    }
+        
+</style>
+        
+</head>
+<body>
+        
+        
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Servies</a>
+        <a href="#">Portfoli</a>
+        <a href="#">Contact</a>
+    </nav>
+        
+        
+</body>
+</html>

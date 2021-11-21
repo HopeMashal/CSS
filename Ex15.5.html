@@ -1,0 +1,85 @@
+<!--Exercise 15.5-->
+<!--Amal Mishael-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 15.5</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            font-size: 16px;
+            text-align: center;
+        }
+        .navbar{
+            border: rgba(0, 0, 0, 0.363) solid 2px;
+            background-color: rgba(128, 128, 128, 0.144);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .logo{
+            font-size: 30px;
+            font-weight: bold;
+            padding:20px;
+        }
+
+        .option{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .p1 {
+            list-style: none;
+            margin-right: 2rem;
+        }
+         /*Smartphones*/
+         @media only screen and (max-width: 500px){
+            .navbar{
+            border: rgba(0, 0, 0, 0.363) solid 2px;
+            background-color: rgba(128, 128, 128, 0.144);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+            .option{
+            flex-direction: column;
+            }
+            .p1{
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">APPLESEEDS</div>
+        <ul class="option">
+            <li class="p1">Home</li>
+            <li class="p1">About</li>
+            <li class="p1">Protfolio</li>
+            <li class="p1">Contact</li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

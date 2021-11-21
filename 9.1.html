@@ -1,0 +1,31 @@
+<!--Exercise 9.1-->
+<!--Amal Mishael-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 9.1</title>
+    <style>
+        #outer {
+            width: 100px;
+            height: 100px;
+            background: darkcyan;
+            margin: 50px;
+            }
+        #inner {
+            width: 50px;
+            height: 50px;
+            background: lightgreen;
+            position: relative; /*Q1(Ans). Absolute is the positioned relative to its parent element that is positioned, but Relative is value cause element to be moved from its normal position*/
+            top: 10px;
+            }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="inner"></div>
+    </div>
+</body>
+</html>

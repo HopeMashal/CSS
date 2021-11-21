@@ -1,0 +1,166 @@
+<!--Exercise 19.5-->
+<!--Amal Mishael-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 19.5</title>
+    <style>
+        *{
+            margin:10px;
+        }
+        body{
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            width: 90vw;
+        }
+        .spinner{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90vh;
+            width:90vw;
+        }
+        .spinner1 {
+            height:100px;
+            width:100px;
+            border: .2em solid transparent;
+            border-top-color: rgb(1, 255, 196);
+            border-radius: 50%;
+            animation: 1s spinner1 linear infinite;
+            position: relative;}
+        .spinner1:before {
+            content: '';
+            display: block;
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            top: -.2em;
+            left: -.2em;
+            border: .2em solid rgb(152, 152, 179);
+            border-radius: 50%;
+            opacity: .5;
+        }
+
+        @keyframes spinner1 {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+
+
+        .spinner2 {
+            height:100px;
+            width:100px;
+            border: .2em solid transparent;
+            border-top-color:  rgb(1, 255, 196) ;
+            border-radius: 50%;
+            animation: 1s spinner2 linear infinite;
+            position: relative;}
+
+        @keyframes spinner2 {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+
+
+        .spinner3 {
+            width: 120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            }
+
+            .spinner-3 {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: rgb(1, 255, 196);
+            }
+
+            .spinner3-1 {
+                animation: spinner3 .4s ease 0s infinite alternate;
+            }
+            .spinner3-2 {
+                animation: spinner3 .4s ease .2s infinite alternate;
+            }
+            .spinner3-3 {
+                animation: spinner3 .4s ease .4s infinite alternate;
+            }
+            @keyframes spinner3 {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: .25;
+            }
+            }
+
+
+
+            .spinner4 {
+            width: 120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            }
+
+            .spinner-4 {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: rgb(1, 255, 196);
+            }
+
+            .spinner4-1 {
+                animation: spinner4 .4s ease 0s infinite alternate;
+            }
+            .spinner4-2 {
+                animation: spinner4 .4s ease .2s infinite alternate;
+            }
+            .spinner4-3 {
+                animation: spinner4 .4s ease .4s infinite alternate;
+            }
+            @keyframes spinner4 {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-20px);
+            }
+            }
+
+    </style>
+</head>
+<body>
+    <div class="spinner">
+        <div class="spinner1"></div>
+        <div class="spinner2"></div>
+        <div class="spinner3">  
+            <div class="spinner-3 spinner3-1"></div>
+            <div class="spinner-3 spinner3-2"></div>
+            <div class="spinner-3 spinner3-3"></div>
+          </div>
+        <div class="spinner4">  
+            <div class="spinner-4 spinner4-1"></div>
+            <div class="spinner-4 spinner4-2"></div>
+            <div class="spinner-4 spinner4-3"></div>
+          </div>
+    </div>
+    
+</body>
+</html>

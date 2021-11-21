@@ -1,0 +1,101 @@
+<!--Exercise 19.3-->
+<!--Amal Mishael-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 19.3</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+        }
+
+        .botton-box {
+            overflow: hidden;
+            height: 20vh;
+            width: 20vw;
+            border: 3px solid #000;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            transition: all 1s ease-in-out;
+            cursor: pointer;
+        }
+
+        .botton-box::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .botton-box-1::before {
+            content: '';
+            background: yellow;
+            transform-origin: 0 0;
+            transform: rotate(-90deg);
+            transition: all 1s ease-in-out;
+            z-index: -10;
+        }
+        .botton-box-1:hover::before {
+            transform: rotate(0);
+        }
+
+        .botton-box-2::before {
+            content: '';
+            background: black;
+            transform: translateX(-20vw);
+            transition: all 1s ease-in-out;
+            z-index: -10;
+        }
+        .botton-box-2:hover {
+            color: white;
+        }
+
+        .botton-box-2:hover::before {
+            transform: translateX(0);
+        }
+
+        .botton-box-3::before {
+            content: 'YEAH!';
+            background: Red;
+            transform: translateY(-20vw);
+            transition: all 1s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .botton-box-3:hover::before {
+            transform: translateY(0);
+        }
+
+        .botton-box-4::before {
+            content: 'Scale & Opacity';
+            color: white;
+            background: black;
+            transform: scale(2);
+            opacity: 0;
+            transition: all 1s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .botton-box-4:hover::before {
+            transform: scale(1);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="botton-box botton-box-1">Rotate</div>
+    <div class="botton-box botton-box-2">Translate</div>
+    <div class="botton-box botton-box-3">TranslateY</div>
+    <div class="botton-box botton-box-4">Scale & Opacity</div>
+</body>
+</html>

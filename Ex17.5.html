@@ -1,0 +1,78 @@
+<!--Exercise 17.5-->
+<!--Amal Mishael-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 17.5</title>
+    <style>
+        .tooltip {
+          position: relative;
+          display: inline-block;
+          color:purple;
+          cursor:pointer;
+        
+        }
+        
+        .tooltip .tooltiptext {
+          visibility: hidden;
+          width: 120px;
+          background-color: yellow;
+          color: purple;
+          font-size:12px;
+          text-align: center;
+          border-radius: 12px;
+          padding: 5px 0;
+          position: absolute;
+          z-index: 1;
+          bottom: 100%;
+          left: 50%;
+          margin-left: -30px;
+        }
+        
+        .tooltip .tooltiptext::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 25%;
+          margin-left: -5px;
+          border-width: 5px;
+          border-style: solid;
+          border-color: yellow transparent transparent transparent;
+        }
+        
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam corporis omins 
+            officiis ullam quae blanditiis deserunt laborum quod. Fugiat quis fugit sed 
+            inventore illum. Ut velit, facilis aut quos inventore iste non? 
+            Labore tempore consecteture et exercitationem sed, dolorum in commodi illo 
+            ullam <font class="tooltip">corporis
+  <span class="tooltiptext">this is a badass tooltip</span>
+</font> consequatur  
+            aliquid quis, voluptatum optio in harum similique laborum recusandae 
+            impedit beatae fugit vel ea. Ut sequi debitis possimus consequatur quad 
+            ipsa illo ipsam unde exercitationem deleniti! Atque, repellendus 
+            impedit harum, vero aperiam, tempore excepturi repudiandae vitae Labore 
+            laborum ad possimus ipsum velit? Debities voluptate, doloremque, est 
+            fugit praesentium beatae, nisi dolores laborum earum 
+            <font class="tooltip">tenetur
+  <span class="tooltiptext">this is a badass tooltip</span>
+</font> libero? Quos, alias in? 
+            Fugit modi incidunt tenetur nobis fuga eius molestias dolore nam minus quos, 
+            voluptaters at, dolor exercitationem adipisci amet beatae iste voluptatibue. 
+
+            
+        </p>
+    </div>
+    
+    
+</body>
+</html>
